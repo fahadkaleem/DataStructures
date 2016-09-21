@@ -1,4 +1,0 @@
-"""
-Author: Mohammed Fahad Kaleem
-
-"""
