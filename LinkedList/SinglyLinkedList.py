@@ -5,17 +5,15 @@ Author: Mohammed Fahad Kaleem
 
 class Node:
 
-    def __init__(self):
-        self.data = None
-        self.next = Node
+    def __init__(self,data,next=None):
+        self.data = data
+        self.nextNode = next
 
     def setData(self,data):
         """
         Method to set data for a node
-
         Argument:
         :param data: data for a node
-
         Return:
         :return: None
         """
@@ -34,14 +32,14 @@ class Node:
         :param next: next node
         :return: None
         """
-        self.next = next
+        self.nextNode = next
 
     def getNext(self):
         """
         Method to get the next node for a node
         :return: Next node
         """
-        return self.next
+        return self.nextNode
 
     def hasNext(self):
         """
@@ -49,7 +47,7 @@ class Node:
         :return: True if there is a next node, False if there is no next node
         :rtype: Boolean
         """
-        return self.next!=None
+        return self.nextNode != None
 
 
 class LinkedList(object):
@@ -82,16 +80,16 @@ class LinkedList(object):
     # insertAtPosition: Use this method to insert a node at a particular position of the Linked List
     """
 
-    def insertNode(self,node):
+    def insertNode(self,data):
         """
         Method to insert a node to the Linked List
         :param node: Node to be inserted
         :return: None
         """
         if self.length == 0:
-            self.insertHead(node)
+            self.insertHead(data)
         else:
-            self.insertTail(node)
+            self.insertTail(data)
 
     def insertHead(self, data):
         """
@@ -99,8 +97,7 @@ class LinkedList(object):
         :param data: the data of the node to be inserted
         :return: None
         """
-        nodeToBeInserted = Node()
-        nodeToBeInserted.setData(data)
+        nodeToBeInserted = Node(data)
         if self.length == 0:
             self.head = nodeToBeInserted
         else:
@@ -116,8 +113,7 @@ class LinkedList(object):
         :var currentNode: The node being processed
         :var length: The variable that holds the length of the Linked List
         """
-        nodeToBeInserted = Node()
-        nodeToBeInserted.setData(data)
+        nodeToBeInserted = Node(data)
         currentNode = self.head
 
         while currentNode.getNext() != None:
@@ -125,7 +121,7 @@ class LinkedList(object):
         currentNode.setNext(nodeToBeInserted)
         self.length = self.length + 1
 
-    def insertAtPosition(self,data, position):
+    def insertAtPosition(self, data, position):
         """
         Method to insert a node at a given position
         :param data: Data of the new node which has to be inserted
@@ -135,13 +131,12 @@ class LinkedList(object):
         :return: None
         """
         if position > self.length or position < 0:
-            print("Invalid position!, The size of the Linked List is:%s"%self.length)
+            print("Invalid position!, The size of the Linked List is:%s" % self.length)
         else:
-            if position ==0:
+            if position == 0:
                 self.insertHead(data)
             else:
-                nodeToBeInserted = Node()
-                nodeToBeInserted.setData(data)
+                nodeToBeInserted = Node(data)
                 currentNode = self.head
                 count = 0
                 while count < position - 1:
@@ -149,9 +144,75 @@ class LinkedList(object):
                     count = count + 1
                 nodeToBeInserted.setNext(currentNode.getNext())
                 currentNode.setNext(nodeToBeInserted)
-                self.length = self.length+1
+                self.length = self.length + 1
 
-    """
-    Methods to Delete nodes from a Linked List
+    def printLinkedList(self):
+        if self.length == 0:
+            print("Linked List is empty")
+        else:
+            current = self.head
+            linkedlist = []
+            while current!=None:
+                linkedlist.append(current.getData())
+                current = current.getNext()
+            print(linkedlist)
 
-    """
+
+    def deleteHead(self):
+        if self.length == 0:
+            print("Linked List is Empty")
+        else:
+            self.head = self.head.getNext()
+            self.length = self.length - 1
+
+    def deleteTail(self):
+        if self.length == 0:
+            print("Linked List is Empty")
+        else:
+            current = self.head
+            while current.getNext().getNext() != None:
+                current = current.getNext()
+            current.setNext(None)
+
+    def deleteNodeByPosition(self, position):
+        if self.isEmpty():
+            print("Linked List is Empty")
+        elif position>self.length:
+            print("Invalid position")
+        elif position == self.length:
+            self.deleteTail()
+        elif position == 0:
+            self.deleteHead()
+        else:
+            count = 0
+            current = self.head
+            while count < position-1:
+                current = current.getNext()
+                count = count + 1
+            current.setNext(current.getNext().getNext())
+
+    def deleteNodeByValue(self,data):
+        if self.isEmpty():
+            print("Linked List is empty")
+        else:
+            current = self.head
+            while current.getNext()!=None and current.getNext().getData()!= data:
+                current = current.getNext()
+            current.setNext(current.getNext().getNext())
+
+    def isEmpty(self):
+        if self.length==0:
+            return True
+        return False
+
+
+
+
+ll = LinkedList()
+ll.insertNode(1)
+ll.insertNode(2)
+ll.insertNode(3)
+#ll.insertNode(4)
+ll.printLinkedList()
+ll.deleteNodeByValue(2)
+ll.printLinkedList()
