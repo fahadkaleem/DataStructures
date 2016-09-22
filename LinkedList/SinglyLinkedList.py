@@ -154,9 +154,9 @@ class LinkedList(object):
             linkedlist = []
             while current!=None:
                 linkedlist.append(current.getData())
+                print(' [%s] =====>'%current.getData(),end='')
                 current = current.getNext()
-            print(linkedlist)
-
+        print('[X]')
 
     def deleteHead(self):
         if self.length == 0:
@@ -212,7 +212,6 @@ ll = LinkedList()
 ll.insertNode(1)
 ll.insertNode(2)
 ll.insertNode(3)
-#ll.insertNode(4)
+ll.insertNode(4)
 ll.printLinkedList()
-ll.deleteNodeByValue(2)
-ll.printLinkedList()
+
