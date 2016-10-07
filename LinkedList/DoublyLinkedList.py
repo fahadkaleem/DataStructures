@@ -28,4 +28,16 @@ class DoublyLinkedList(object):
         self.head = None
         self.length = 0
 
+    def insertAtBeginning(self,data):
+        nodeToBeInserted = Node(data,None,None)
+        if self.length==0:
+            self.head = nodeToBeInserted
+            self.tail = nodeToBeInserted
+        else:
+            nodeToBeInserted.set_nextNode(self.head)
+            self.head.set_previousNode(nodeToBeInserted)
+            self.head = nodeToBeInserted
+            self.length += 1
+
+
 
