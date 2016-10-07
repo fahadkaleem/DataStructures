@@ -149,9 +149,9 @@ class LinkedList(object):
             print("Linked List is empty")
         else:
             current = self.head
-            linkedlist = []
+            #linkedlist = []
             while current is not None:
-                linkedlist.append(current.get_data())
+                #linkedlist.append(current.get_data())
                 print(' [%s] =====>' % current.get_data(), end='')
                 current = current.get_next()
         print('[X]')
@@ -209,7 +209,7 @@ def insert_at_position(self, data, position):
     Method to insert a node at a given position
     :param data: Data of the new node which has to be inserted
     :param position: Position in the Linked List where the new node has to be inserted
-    :var currentNode: Node that is being processed
+    :var current_node: Node that is being processed
     :var count: Count variable
     :return: None
     """
@@ -219,14 +219,14 @@ def insert_at_position(self, data, position):
         if position == 0:
             self.insert_head(data)
         else:
-            nodeToBeInserted = Node(data)
-            currentNode = self.head
+            node_to_be_inserted = Node(data)
+            current_node = self.head
             count = 0
             while count < position - 1:
-                currentNode = currentNode.get_next()
+                current_node = current_node.get_next()
                 count += 1
-            nodeToBeInserted.set_next(currentNode.get_next())
-            currentNode.set_next(nodeToBeInserted)
+            node_to_be_inserted.set_next(current_node.get_next())
+            current_node.set_next(node_to_be_inserted)
             self.length += 1
 
 

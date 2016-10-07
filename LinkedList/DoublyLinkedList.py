@@ -1,43 +1,81 @@
 class Node:
     def __init__(self,data=None, next_node=None, previous_node=None):
         self.data = data
-        self.nextNode = next_node
-        self.previousNode = previous_node
+        self.next_node = next_node
+        self.previous_node = previous_node
 
     def set_data(self,data):
-         self.data = data
+        self.data = data
 
     def get_data(self):
-         return self.data
+        return self.data
 
-    def set_nextNode(self,nextNode):
-         self.nextNode = nextNode
+    def set_next_node(self, next_node):
+        self.next_node = next_node
 
-    def get_nextNode(self):
-         return self.nextNode
+    def get_next_node(self):
+        return self.next_node
 
-    def set_previousNode(self,previousNode):
-         self.previousNode = previousNode
+    def set_previous_node(self, previous_node):
+        self.previous_node = previous_node
 
-    def get_previousNode(self):
-         return self.previousNode
+    def get_previous_node(self):
+        return self.previous_node
 
 
 class DoublyLinkedList(object):
     def __init__(self):
         self.head = None
         self.length = 0
+        self.tail = None
 
-    def insertAtBeginning(self,data):
-        nodeToBeInserted = Node(data,None,None)
-        if self.length==0:
-            self.head = nodeToBeInserted
-            self.tail = nodeToBeInserted
-        else:
-            nodeToBeInserted.set_nextNode(self.head)
-            self.head.set_previousNode(nodeToBeInserted)
-            self.head = nodeToBeInserted
+    def insert_head(self, data):
+        node_to_be_inserted = Node(data,None,None)
+        if self.length == 0:
+            self.head = node_to_be_inserted
+            self.tail = node_to_be_inserted
             self.length += 1
+        else:
+            node_to_be_inserted.set_previous_node(None)
+            node_to_be_inserted.set_next_node(self.head)
+            self.head.set_previous_node(node_to_be_inserted)
+            self.head = node_to_be_inserted
+            self.length += 1
+
+    def insert_tail(self,data):
+        node_to_be_inserted = Node(data,None,None)
+        if self.length == 0:
+            self.head = node_to_be_inserted
+            self.tail = node_to_be_inserted
+            self.length += 1
+        else:
+            current_node = self.head
+            while current_node.get_next_node() is not None:
+                current_node = current_node.get_next_node()
+            current_node.set_next_node(node_to_be_inserted)
+            node_to_be_inserted.set_previous_node(current_node)
+            self.tail = current_node.get_next_node()
+
+    def print_linkedlist(self):
+        if self.length == 0:
+            print("Linked List Empty")
+        else:
+            current_node = self.head
+            while current_node is not None:
+                print('[%s]'%current_node.get_data(),end=' <===> ')
+                current_node = current_node.get_next_node()
+            print('X')
+
+
+
+dll = DoublyLinkedList()
+dll.insert_head(45)
+dll.insert_head(33)
+dll.insert_tail(46)
+dll.insert_tail(47)
+dll.insert_tail(48)
+dll.print_linkedlist()
+
 
 
 
