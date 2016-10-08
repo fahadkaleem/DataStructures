@@ -75,19 +75,21 @@ class DoublyLinkedList(object):
 
     def delete_head(self):
         if self.length == 0:
-            return None
+            return False
         else:
             self.head.get_next_node().set_previous_node(None)
             self.head = self.head.get_next_node()
+            return True
 
     def delete_tail(self):
         if self.length == 0:
-            return None
+            return False
         else:
             current_node = self.head
             while current_node.get_next_node() is not None:
                 current_node = current_node.get_next_node()
             current_node.get_previous_node().set_next_node(None)
+            return True
 
     def delete_at_nth_position(self,position):
         if self.length == 0:
@@ -103,12 +105,10 @@ class DoublyLinkedList(object):
         if self.length == 0:
             return None
         if self.head.get_data() == data:
-            self.head.get_next_node().set_previous_node(None)
-            self.head = self.head.get_next_node()
+            self.delete_head()
             return True
         if self.tail.get_data() == data:
-            self.tail.get_previous_node().set_next_node(None)
-            self.tail = self.tail.get_previous_node()
+            self.delete_tail()
             return True
         current_node = self.head
         while current_node is not None:
@@ -153,7 +153,8 @@ if __name__ == "__main__":
     dll.insert_at_position(3,15)
     dll.insert_at_position(15,90)
     dll.insert_at_position(-1,12)
-    dll.delete_node_with_data(45)
+    dll.delete_node_with_data(90)
+
     dll.print_linkedlist()
 
 

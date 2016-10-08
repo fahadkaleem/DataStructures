@@ -189,7 +189,7 @@ class LinkedList(object):
                 count += 1
             current.set_next(current.get_next().get_next())
 
-    def delete_node_by_value(self, data):
+    def delete_node_by_data(self, data):
         if self.is_empty():
             print("Linked List is empty")
         else:
@@ -203,36 +203,10 @@ class LinkedList(object):
             return True
         return False
 
-
-def insert_at_position(self, data, position):
-    """
-    Method to insert a node at a given position
-    :param data: Data of the new node which has to be inserted
-    :param position: Position in the Linked List where the new node has to be inserted
-    :var current_node: Node that is being processed
-    :var count: Count variable
-    :return: None
-    """
-    if position > self.length or position < 0:
-        print("Invalid position!, The size of the Linked List is:%s" % self.length)
-    else:
-        if position == 0:
-            self.insert_head(data)
-        else:
-            node_to_be_inserted = Node(data)
-            current_node = self.head
-            count = 0
-            while count < position - 1:
-                current_node = current_node.get_next()
-                count += 1
-            node_to_be_inserted.set_next(current_node.get_next())
-            current_node.set_next(node_to_be_inserted)
-            self.length += 1
-
-
-ll = LinkedList()
-ll.insert_node(1)
-ll.insert_node(2)
-ll.insert_node(3)
-ll.insert_node(4)
-ll.print_linkedlist()
+if __name__ == "__main__":
+    ll = LinkedList()
+    ll.insert_node(1)
+    ll.insert_node(2)
+    ll.insert_node(3)
+    ll.insert_node(4)
+    ll.print_linkedlist()
