@@ -28,28 +28,28 @@ Linkedlist is a linear collection of data elements called "Nodes". Each node con
 ## Singly Linked List
 Singly Linked List is a linked list where every element points to the next element of the list. Here the navigation of items is forward only.
 
-
-
-|   |Problem|Time complexity|
-|---|:---:|:---:|
-|1. |Length of Linked List|O(n)|
-|2. |Insert node at head|O(1)|
-|3. |Insert node at tail|O(1)|
-|4. |Insert node at position|O(1)|
-|5. |Print Linked List|O(n)|
-|6. |Delete node at head|O(1)|
-|7. |Delete node at tail|O(1)|
-|8. |Delete node at nth position|O(1)|
-|9. |Delete node by Data|O(1)|
+|   |Functions|
+|---|:---|
+|1. |Length of Linked List|
+|2. |Insert node at head|
+|3. |Insert node at tail|
+|4. |Insert node at position|
+|5. |Print Linked List|
+|6. |Delete node at head|
+|7. |Delete node at tail|
+|8. |Delete node at nth position|
+|9. |Delete node by Data|
 
 ## Doubly Linked List
 Doubly Linked List is a linked list where every element points to the next element and the previous element of the list. Here the navigation of the items is forward and backward.  
-1. Insert node at Head
-2. Insert node at Tail
-3. Insert at position
-4. Delete node at Head
-5. Delete node at Tail
-6. Delete a Node by Data
-7. Delete a Node on nth position
-8. Get node at nth position
-9. Print Double linked list
+|   |Functions|
+|---|:---|
+|1.| Insert node at Head|
+|2.| Insert node at Tail|
+|3.| Insert at position|
+|4.| Delete node at Head|
+|5.| Delete node at Tail|
+|6.| Delete a Node by Data|
+|7.| Delete a Node on nth position|
+|8.| Get node at nth position|
+|9.| Print Double linked list|
