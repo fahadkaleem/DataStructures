@@ -47,6 +47,4 @@ class CircularLinkedList(object):
                 print('[%s]'%current_node.get_data(),end=' ===>')
                 current_node = current_node.get_next_node()
 
-    def insert_head(self,data):
-        node_to_be_inserted = Node().set_data(data)
 

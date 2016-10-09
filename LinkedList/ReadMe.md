@@ -66,3 +66,13 @@ Circular Linked List is a linked list where the last element(tail) points to the
 |4.| Delete node at Head|
 |5.| Delete node at Tail|
 |6.| Length of the linked list|
+
+## Problems
+Following is a list of problems which have been solved, you can find the solutions to these problems in the "Problems" directory
+
+|   |Problem|Approach|Time Complexity|Space Complexity|Status|
+|---|:---|:---:|:---:|:---:|:---:|
+|1.|Implement Stack using Linked List|Linked List|||Not solved|
+|2.|Find kth node from the end of a Linked List|Hash Table|||Not solved|
+|3.|Find kth node from the end of Linked List|Two Scans|||Not solved|
+|4.|Find kth node from the end of Linked List|Two Pointers|||Not solved|
