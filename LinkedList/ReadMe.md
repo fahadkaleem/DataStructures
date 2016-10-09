@@ -25,7 +25,7 @@ Linkedlist is a linear collection of data elements called "Nodes". Each node con
 1. **Head:** The first element in the linked list is called the head of the linked list
 2. **Tail:** The last element in the linked list is called the tail of the linked list
 
-## Singly Linked List
+## [ Singly Linked List ](https://github.com/fahadkaleem/DataStructures/blob/master/LinkedList/SinglyLinkedList.py)
 Singly Linked List is a linked list where every element points to the next element of the list. Here the navigation of items is forward only.
 
 |   |Operations|
@@ -40,7 +40,7 @@ Singly Linked List is a linked list where every element points to the next eleme
 |8. |Delete node at nth position|
 |9. |Delete node by Data|
 
-## Doubly Linked List
+## [ Doubly Linked List ](https://github.com/fahadkaleem/DataStructures/blob/master/LinkedList/DoublyLinkedList.py)
 Doubly Linked List is a linked list where every element points to the next element and the previous element of the list. Here the navigation of the items is forward and backward.  
 
 |   |Operations|
@@ -55,7 +55,7 @@ Doubly Linked List is a linked list where every element points to the next eleme
 |8.| Get node at nth position|
 |9.| Print Double linked list|
 
-## Circular Linked List
+## [ Circular Linked List ](https://github.com/fahadkaleem/DataStructures/blob/master/LinkedList/CircularLinkedList.py) 
 Circular Linked List is a linked list where the last element(tail) points to the first element(head).
  
 |   |Operations|
