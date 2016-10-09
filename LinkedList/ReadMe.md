@@ -28,7 +28,7 @@ Linkedlist is a linear collection of data elements called "Nodes". Each node con
 ## Singly Linked List
 Singly Linked List is a linked list where every element points to the next element of the list. Here the navigation of items is forward only.
 
-|   |Functions|
+|   |Operations|
 |---|:---|
 |1. |Length of Linked List|
 |2. |Insert node at head|
@@ -42,7 +42,7 @@ Singly Linked List is a linked list where every element points to the next eleme
 
 ## Doubly Linked List
 Doubly Linked List is a linked list where every element points to the next element and the previous element of the list. Here the navigation of the items is forward and backward.  
-|   |Functions|
+|   |Operations|
 |---|:---|
 |1.| Insert node at Head|
 |2.| Insert node at Tail|
