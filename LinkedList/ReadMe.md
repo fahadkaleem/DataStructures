@@ -42,6 +42,7 @@ Singly Linked List is a linked list where every element points to the next eleme
 
 ## Doubly Linked List
 Doubly Linked List is a linked list where every element points to the next element and the previous element of the list. Here the navigation of the items is forward and backward.  
+
 |   |Operations|
 |---|:---|
 |1.| Insert node at Head|
@@ -53,3 +54,15 @@ Doubly Linked List is a linked list where every element points to the next eleme
 |7.| Delete a Node on nth position|
 |8.| Get node at nth position|
 |9.| Print Double linked list|
+
+## Circular Linked List
+Circular Linked List is a linked list where the last element(tail) points to the first element(head).
+ 
+|   |Operations|
+|---|:---|
+|1.| Insert node at Head|
+|2.| Insert node at Tail|
+|3.| Insert at position|
+|4.| Delete node at Head|
+|5.| Delete node at Tail|
+|6.| Length of the linked list|
