@@ -22,8 +22,8 @@ Linkedlist is a linear collection of data elements called "Nodes". Each node con
 4. Difficulties arise in linked lists when it comes to reverse traversing. For instance, singly linked lists are cumbersome to navigate backwards and while doubly linked lists are somewhat easier to read, memory is wasted in allocating space for a back-pointer.
 
 ### Definitions:
-1. Head: The first element in the linked list is called the head of the linked list
-2. Tail: The last element in the linked list is called the tail of the linked list
+1. **Head:** The first element in the linked list is called the head of the linked list
+2. **Tail:** The last element in the linked list is called the tail of the linked list
 
 ## Singly Linked List
 Singly Linked List is a linked list where every element points to the next element of the list. Here the navigation of items is forward only.
