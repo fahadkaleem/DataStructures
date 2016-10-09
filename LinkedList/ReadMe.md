@@ -42,6 +42,7 @@ Singly Linked List is a linked list where every element points to the next eleme
 
 ## Doubly Linked List
 Doubly Linked List is a linked list where every element points to the next element and the previous element of the list. Here the navigation of the items is forward and backward.  
+
 |   |Operations|
 |---|:---|
 |1.| Insert node at Head|
