@@ -37,6 +37,15 @@ class LinkedList(object):
             current_node.set_next_node(new_node)
             self.length += 1
 
+    def print_linked_list(self):
+        if self.length == 0:
+            print("Linked List is empty")
+        else:
+            current_node = self.head
+            while current_node:
+                print("[%s]"%current_node.get_data(),end=" ==> ")
+                current_node = current_node.get_next_node()
+
     def nth_node(self,n):
         nth_node = self.length - n + 1
         if self.length < n:
@@ -59,6 +68,7 @@ if __name__ == "__main__":
     linked_list.insert(16)
     linked_list.insert(3)
     linked_list.insert(15)
-    linked_list.nth_node(2)
+    linked_list.print_linked_list()
+    #linked_list.nth_node(2)
 
 
