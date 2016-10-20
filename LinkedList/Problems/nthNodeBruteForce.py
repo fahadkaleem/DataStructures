@@ -45,20 +45,18 @@ class LinkedList(object):
             while current_node:
                 print("[%s]"%current_node.get_data(),end=" ==> ")
                 current_node = current_node.get_next_node()
+            print()
 
     def nth_node(self,n):
         nth_node = self.length - n + 1
-        if self.length < n:
+        if self.length < nth_node:
             print("Value of n is greater than the length of the linked list")
             return False
-        elif self.length == nth_node:
-            return nth_node
         else:
-            print(self.length)
             current_node = self.head
-            for i in range(nth_node):
+            for i in range(nth_node - 1):
                 current_node = current_node.get_next_node()
-            print(current_node.get_data())
+            print("Nth node from last is: %s "%current_node.get_data())
             return current_node.get_data()
 
 
@@ -69,6 +67,6 @@ if __name__ == "__main__":
     linked_list.insert(3)
     linked_list.insert(15)
     linked_list.print_linked_list()
-    #linked_list.nth_node(2)
+    linked_list.nth_node(3)
 
 
