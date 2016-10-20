@@ -5,24 +5,30 @@ Author: Mohammed Fahad Kaleem
 Problem: Find the nth node from the end of Linked List
 
 Method:
+Maintain two pointers
+1. Reference pointer and main pointer.
+2. Initialize both reference and main pointers to head.
+3. First move reference pointer to n nodes from head.
+4. Move both pointers one by one until reference pointer reaches end.
+5. Main pointer will point to nth node from the end. Return main pointer.
 """
 
 
 class Node:
-    def __init__(self,data,next_node=None):
+    def __init__(self, data, next_node=None):
         self.data = data
         self.next_node = next_node
 
     def get_data(self):
         return self.data
 
-    def set_data(self,data):
+    def set_data(self, data):
         self.data = data
 
     def get_next_node(self):
         return self.next_node
 
-    def set_next_node(self,next_node):
+    def set_next_node(self, next_node):
         self.next_node = next_node
 
 
@@ -31,9 +37,9 @@ class LinkedList(object):
         self.head = None
         self.length = 0
 
-    def insert(self,data):
+    def insert(self, data):
         new_node = Node(data)
-        if self.length==0:
+        if self.length == 0:
             self.head = new_node
             self.length += 1
         else:
@@ -49,6 +55,6 @@ class LinkedList(object):
         else:
             current_node = self.head
             while current_node:
-                print("[%s]"%current_node.get_data(),end=" ==> ")
+                print("[%s]" % current_node.get_data(), end=" ==> ")
                 current_node = current_node.get_next_node()
             print()
