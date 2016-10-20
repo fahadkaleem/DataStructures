@@ -32,20 +32,24 @@ class LinkedList(object):
             self.length += 1
         else:
             current_node = self.head
-            while current_node:
+            while current_node.get_next_node() is not None:
                 current_node = current_node.get_next_node()
             current_node.set_next_node(new_node)
             self.length += 1
 
     def nth_node(self,n):
+        nth_node = self.length - n + 1
         if self.length < n:
             print("Value of n is greater than the length of the linked list")
             return False
+        elif self.length == nth_node:
+            return nth_node
         else:
+            print(self.length)
             current_node = self.head
-            nth_node = self.length - n + 1
             for i in range(nth_node):
-                current_node = current_node.get_next_node
+                current_node = current_node.get_next_node()
+            print(current_node.get_data())
             return current_node.get_data()
 
 
