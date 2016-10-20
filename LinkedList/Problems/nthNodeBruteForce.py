@@ -49,7 +49,6 @@ class LinkedList(object):
             return current_node.get_data()
 
 
-
 if __name__ == "__main__":
     linked_list = LinkedList()
     linked_list.insert(12)
