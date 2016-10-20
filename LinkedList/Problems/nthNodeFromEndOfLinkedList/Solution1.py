@@ -1,5 +1,11 @@
 """
 Author: Mohammed Fahad Kaleem
+Problem: Find the nth node from the end of Linked List
+
+Method:
+1) Calculate the length of Linked List. Let the length be len.
+2) Print the (length – n + 1)th node from the beginning of the Linked List.
+
 """
 
 class Node:
