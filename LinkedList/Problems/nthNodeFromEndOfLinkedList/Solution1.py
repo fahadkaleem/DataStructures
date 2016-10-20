@@ -74,6 +74,6 @@ if __name__ == "__main__":
     linked_list.insert(3)
     linked_list.insert(15)
     linked_list.print_linked_list()
-    linked_list.nth_node(3)
+    linked_list.nth_node(0)
 
 

@@ -58,3 +58,30 @@ class LinkedList(object):
                 print("[%s]" % current_node.get_data(), end=" ==> ")
                 current_node = current_node.get_next_node()
             print()
+
+    def nth_node(self,n):
+        if self.length == 0:
+            print("Linked List is empty")
+            return False
+        reference_pointer = self.head
+        main_pointer = self.head
+        nth_node = self.length - n +1
+        if nth_node > self.length:
+            print("Value of n is greater than length of the Linked List")
+            return False
+        for i in range(nth_node + 1):
+            reference_pointer = reference_pointer.get_next_node()
+        while reference_pointer:
+            reference_pointer = reference_pointer.get_next_node()
+            main_pointer = main_pointer.get_next_node()
+        print(main_pointer.get_data())
+        return main_pointer.get_data()
+
+if __name__ == "__main__":
+    linked_list = LinkedList()
+    linked_list.insert(12)
+    linked_list.insert(16)
+    linked_list.insert(3)
+    linked_list.insert(15)
+    linked_list.print_linked_list()
+    linked_list.nth_node(0)
