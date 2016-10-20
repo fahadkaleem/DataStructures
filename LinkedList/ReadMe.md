@@ -73,5 +73,5 @@ Following is a list of problems which have been solved, you can find the solutio
 |   |Problem|Approach|Time Complexity|Space Complexity|Status|
 |---|:---|:---:|:---:|:---:|:---:|
 |1.|Implement Stack using Linked List|Linked List|||Not solved|
-|2.|[Find nth node from the end of a Linked List]()|Length|||Solved|
+|2.|[Find nth node from the end of a Linked List](https://github.com/fahadkaleem/DataStructures/blob/master/LinkedList/Problems/nthNodeFromEndOfLinkedList/Solution1.py)|Length|||Solved|
 |3.|Find nth node from the end of Linked List|Two Pointers|||Not solved|
