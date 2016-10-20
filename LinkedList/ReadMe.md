@@ -74,5 +74,4 @@ Following is a list of problems which have been solved, you can find the solutio
 |---|:---|:---:|:---:|:---:|:---:|
 |1.|Implement Stack using Linked List|Linked List|||Not solved|
 |2.|[Find nth node from the end of a Linked List]()|Length|||Solved|
-|3.|Find nth node from the end of Linked List|Two Scans|||Not solved|
-|4.|Find nth node from the end of Linked List|Two Pointers|||Not solved|
+|3.|Find nth node from the end of Linked List|Two Pointers|||Not solved|
