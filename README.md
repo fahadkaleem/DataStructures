@@ -18,6 +18,8 @@ python filename.py
 ## Queue
 
 
+## Binary Tree
+
 
 ### Questions taken from:
 
