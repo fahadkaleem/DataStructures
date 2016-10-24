@@ -8,9 +8,12 @@ python filename.py
 ```
 
 ## [Linked List](https://github.com/fahadkaleem/DataStructures/tree/master/LinkedList)
+#### Implementation
 1. Singly Linked List
 2. Doubly Linked List
 3. Circular Linked List
+
+#### Problems
 
 ## [Stack](https://github.com/fahadkaleem/DataStructures/tree/master/Stack)
 
