@@ -12,7 +12,7 @@ python filename.py
 2. Doubly Linked List
 3. Circular Linked List
 
-## Stack
+## [Stack]()
 
 
 ## Queue
