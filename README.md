@@ -42,6 +42,8 @@ python filename.py
 
 ## Heap
 
+## Graph
+
 
 ### This Repository contains Solutions for problems listed in:
 
