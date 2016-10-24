@@ -34,7 +34,7 @@ python filename.py
 
 ## Arrays
 
-
+## Strings
 
 
 ### This Repository contains Solutions for problems listed in:
