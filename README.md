@@ -40,6 +40,8 @@ python filename.py
 
 ## Hash
 
+## Heap
+
 
 ### This Repository contains Solutions for problems listed in:
 
