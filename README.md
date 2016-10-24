@@ -15,7 +15,7 @@ python filename.py
 ## [Stack](https://github.com/fahadkaleem/DataStructures/tree/master/Stack)
 
 
-## [Queue]()
+## [Queue](https://github.com/fahadkaleem/DataStructures/tree/master/Queue)
 
 
 ## [Binary Tree]()
