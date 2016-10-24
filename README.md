@@ -18,7 +18,7 @@ python filename.py
 ## [Queue](https://github.com/fahadkaleem/DataStructures/tree/master/Queue)
 
 
-## [Binary Tree]()
+## [Binary Tree](https://github.com/fahadkaleem/DataStructures/tree/master/BinaryTree)
 
 
 ### This Repository contains Solutions for problems listed in:
