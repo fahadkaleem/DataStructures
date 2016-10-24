@@ -18,7 +18,9 @@ python filename.py
 2. Find nth node from the end of a Linked List
 
 ## [Stack](https://github.com/fahadkaleem/DataStructures/tree/master/Stack)
+#### Implementation
 
+#### Problems
 
 ## [Queue](https://github.com/fahadkaleem/DataStructures/tree/master/Queue)
 
