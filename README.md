@@ -49,6 +49,9 @@ python filename.py
 #### Problems
 
 ## Hash
+#### Implementation
+
+#### Problems
 
 ## Heap
 
