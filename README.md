@@ -14,6 +14,8 @@ python filename.py
 3. Circular Linked List
 
 #### Problems
+1. Implement Stack using Linked List
+2. Find nth node from the end of a Linked List
 
 ## [Stack](https://github.com/fahadkaleem/DataStructures/tree/master/Stack)
 
