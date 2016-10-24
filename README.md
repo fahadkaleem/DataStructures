@@ -7,7 +7,7 @@ To run any program, just use the following command
 python filename.py
 ```
 
-## Linked List
+## [Linked List](https://github.com/fahadkaleem/DataStructures/tree/master/LinkedList)
 1. Singly Linked List
 2. Doubly Linked List
 3. Circular Linked List
