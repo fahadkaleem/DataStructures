@@ -1,5 +1,5 @@
 # Data Structures
-
+This repository contains Data Structures problems with Solutions. 
 
 ## Run
 To run any program, just use the following command
