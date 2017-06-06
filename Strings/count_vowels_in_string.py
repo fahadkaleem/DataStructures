@@ -8,20 +8,21 @@ class countVowels():
     def isVowel(self,v):
         return v in self.vowels
 
-    def countVowels(self,givenString):
+    def countVowelsIterative(self, givenString):
         count = 0
         for i in givenString:
             if self.isVowel(i):
-                count+=1
+                count += 1
         return count
+
+    def countVowelsRecursive(self,givenString):
+        count = 0
+        v = givenString()
+        if self.isVowel(v):
+            count += 1
+
 
 if __name__ == "__main__":
     givenString = 'Hello World'
     c = countVowels()
-    print("There are {} vowels in {}".format(c.countVowels(givenString),givenString))
-
-
-
-
-
-
+    print("There are {} vowels in {}".format(c.countVowelsIterative(givenString), givenString))
