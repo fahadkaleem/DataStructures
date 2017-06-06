@@ -15,13 +15,6 @@ class countVowels():
                 count += 1
         return count
 
-    def countVowelsRecursive(self,givenString):
-        count = 0
-        v = givenString()
-        if self.isVowel(v):
-            count += 1
-
-
 if __name__ == "__main__":
     givenString = 'Hello World'
     c = countVowels()
