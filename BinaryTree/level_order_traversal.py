@@ -1,3 +1,6 @@
+# Time: O(n)
+
+
 class Node:
     def __init__(self, data, left=None, right=None):
         self.data = data
@@ -8,15 +11,15 @@ class Node:
 def level_order_traversal(root):
     if root is None:
         return None
-    nodeList = []
-    nodeList.append(root)
-    while len(nodeList) > 0:
-        print(nodeList[0].data,end=" ")
-        node = nodeList.pop(0)
+    node_list = []
+    node_list.append(root)
+    while len(node_list) > 0:
+        print(node_list[0].data,end=" ")
+        node = node_list.pop(0)
         if node.left is not None:
-            nodeList.append(node.left)
+            node_list.append(node.left)
         if node.right is not None:
-            nodeList.append(node.right)
+            node_list.append(node.right)
 
 
 root = Node(1)
