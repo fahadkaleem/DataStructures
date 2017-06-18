@@ -108,10 +108,26 @@ class LinkedList:
         self.tail = previous.next
         self.length -= 1
 
-    # Delete from Linked List with given node
+    # Delete from Linked List with a node with given data
+    def delete_given_node(self,data):
+        if self.length == 0:
+            return
+        current = self.head
+        previous = None
+        while current:
+            if current.data == data:
+                previous.next = current.next
+            previous = current
+            current = current.next
+        self.length -= 1
+
+   # Delete the entire Linked List
+    def delete_linked_list(self):
+        self.head = None
+
 
 linked_list = LinkedList()
 linked_list.__generate__(10,0,9)
 linked_list.__print__()
-linked_list.delete_tail()
+linked_list.delete_linked_list()
 linked_list.__print__()
