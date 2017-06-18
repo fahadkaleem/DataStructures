@@ -121,7 +121,7 @@ class LinkedList:
             current = current.next
         self.length -= 1
 
-   # Delete the entire Linked List
+    # Delete the entire Linked List
     def delete_linked_list(self):
         self.head = None
 
