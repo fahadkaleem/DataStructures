@@ -108,6 +108,8 @@ class LinkedList:
         self.tail = previous.next
         self.length -= 1
 
+    # Delete from Linked List with given node
+
 linked_list = LinkedList()
 linked_list.__generate__(10,0,9)
 linked_list.__print__()
